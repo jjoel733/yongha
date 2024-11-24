@@ -54,7 +54,7 @@ def create_card(title, figure):
 
 app.layout = html.Div(style={'background': colors['background'], 'padding': '10px'}, children=[
     html.Div([
-        html.H1("세진육운 호카게", style={'color': colors['text'], 'textAlign': 'center', 'fontSize': '60px', 'marginBottom': '10px', 'fontFamily': 'Arial, sans-serif'}),
+        html.H1("세진 직수배 간선 매출입현황", style={'color': colors['text'], 'textAlign': 'center', 'fontSize': '60px', 'marginBottom': '10px', 'fontFamily': 'Arial, sans-serif'}),
         html.P("차크라를 통한 데이터분석", style={'textAlign': 'center', 'color': colors['text'], 'fontSize': '20px', 'fontFamily': 'Arial, sans-serif'}),
     ], style={'marginBottom': '20px'}),
 
@@ -77,7 +77,7 @@ app.layout = html.Div(style={'background': colors['background'], 'padding': '10p
         create_card("매입 히트맵", px.density_heatmap(df, x='일', y='매입', color_continuous_scale='Cividis', template="plotly_dark")),
     ], style={'display': 'grid', 'gridTemplateColumns': 'repeat(4, 1fr)', 'gap': '10px'}),
 
-    html.Footer("© 2024 호카게 고용하. All rights reserved.", style={'textAlign': 'center', 'color': colors['text'], 'padding': '10px', 'fontFamily': 'Arial, sans-serif'})
+    html.Footer("© 2024 호카게 고용하/ ajhㅗ All rights reserved.", style={'textAlign': 'center', 'color': colors['text'], 'padding': '10px', 'fontFamily': 'Arial, sans-serif'})
 ])
 
 if __name__ == "__main__":
